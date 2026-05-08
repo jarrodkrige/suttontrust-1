@@ -337,6 +337,12 @@ footer {
   font-size: 0.9375rem;
   color: var(--colour-secondary);
 }
+.access-subhead {
+  text-align: center;
+  margin: var(--gap-xl) auto var(--gap-s);
+  font-size: 1.5rem;
+  color: var(--colour-trust);
+}
 
 /* Built by (Coordinator) */
 .team-section {
