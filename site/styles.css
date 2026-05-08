@@ -360,3 +360,70 @@ footer {
   padding: var(--gap-s) var(--gap-m);
   font-size: 0.9375rem;
 }
+
+/* Uni life (Camila) */
+.uni-life-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-m);
+}
+.uni-life-card {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-left: 4px solid var(--colour-warm);
+  border-radius: var(--radius);
+  padding: var(--gap-m);
+}
+.uni-life-card h3 {
+  font-size: 1.125rem;
+  margin: 0 0 var(--gap-s);
+  color: var(--colour-trust);
+}
+.uni-life-card p { font-size: 0.9375rem; margin: 0 0 var(--gap-s); }
+.uni-life-card ul { margin: 0 0 var(--gap-s); padding-left: 1.25rem; font-size: 0.9375rem; }
+.uni-life-card ul li { margin-bottom: 0.25rem; }
+
+/* Surviving uni tips (Oluwapelumi) */
+.tips-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap-s);
+}
+.tips-list li {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-radius: var(--radius);
+  padding: var(--gap-m);
+  font-size: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.tips-list li::before {
+  content: "✓";
+  position: absolute;
+  left: var(--gap-m);
+  top: var(--gap-m);
+  color: var(--colour-warm);
+  font-weight: 700;
+}
+
+/* Voices misconception note (Shayan) */
+.voices-misconception {
+  margin-top: var(--gap-l);
+  padding: var(--gap-m);
+  background: var(--colour-paper);
+  border-left: 4px solid var(--colour-trust);
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+}
+.voices-misconception .stat-source { display: block; margin-top: 0.25rem; }
+
+/* Focus styles for keyboard navigation (a11y) */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--colour-warm);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
