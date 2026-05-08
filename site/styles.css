@@ -433,3 +433,107 @@ button:focus-visible {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* Designer banner under the hero (James) */
+.design-banner {
+  max-width: var(--max-width);
+  margin: 0 auto var(--gap-l);
+  padding: 0 var(--gap-l);
+}
+.design-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Researcher imagery (Shayan) */
+.research-imagery {
+  margin-top: var(--gap-l);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-m);
+}
+.research-imagery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--colour-quiet);
+}
+
+/* How-it-helps icon strip (James) */
+.how-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-m);
+  margin-bottom: var(--gap-l);
+}
+@media (max-width: 720px) {
+  .how-icons { grid-template-columns: repeat(2, 1fr); }
+}
+.how-icons img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* Rallying cries (Camila) */
+.rallying-section {
+  background: var(--colour-ink);
+  color: var(--colour-paper);
+  padding: var(--gap-xl) max(var(--gap-l), calc((100vw - var(--max-width)) / 2 + var(--gap-l)));
+}
+.rallying-section h2 {
+  text-align: center;
+  color: var(--colour-paper);
+}
+.rally-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--gap-m);
+}
+.rally-list li {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  border-left: 4px solid var(--colour-warm);
+  padding: var(--gap-s) var(--gap-m);
+}
+
+/* Voices imagery (Leya) */
+.voices-imagery {
+  margin-top: var(--gap-l);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-m);
+}
+.voices-imagery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Buddy solo variant (no portrait supplied) */
+.buddy-card--solo {
+  grid-template-columns: 1fr;
+}
+
+/* Access section portrait (Rose) */
+.access-portrait {
+  margin: 0 auto var(--gap-m);
+  max-width: 480px;
+}
+.access-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
