@@ -6,15 +6,15 @@
    ============================================================ */
 
 :root {
-  /* Colour tokens — replace with your team's palette */
-  --colour-ink: #1a1a2e;
+  /* Colour tokens — warm red palette proposed by @software-developer-2 */
+  --colour-ink: #2a0e0e;
   --colour-paper: #fdfcfb;
-  --colour-warm: #f4a261;
-  --colour-trust: #2a9d8f;
-  --colour-quiet: #e9ecef;
-  --colour-secondary: #555;
-  --colour-muted: #888;
-  --colour-warm-hover: #e08d44;
+  --colour-warm: #e63946;
+  --colour-trust: #9d2a2a;
+  --colour-quiet: #fbeceb;
+  --colour-secondary: #5a3a3a;
+  --colour-muted: #8a6a6a;
+  --colour-warm-hover: #c1121f;
 
   /* Type tokens */
   --font-display: "Georgia", "Times New Roman", serif;
